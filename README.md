@@ -10,13 +10,12 @@ CONTENTS OF THIS FILE
  * CONFIGURATION
  * FAQ
  * MAINTAINERS
- * DEMO
  
 INTRODUCTION
 ------------
  Chahmirian is a free Drupal 9 theme. Its simple and elegant using modren technology Sass based. Easy to use for business, service providers and all kinds of drupal sites.
 
-* Drupal 8.x compatible
+* Drupal 9.x compatible
 * Fully responsive
 * Clean & modern design
 * HTML5 & CSS3
@@ -24,10 +23,14 @@ INTRODUCTION
 * Multi-level drop down main menu
 * Google Material Font Icons
 * FontAwesome Font Icons
-* Inbuilt slider for homepage.
+* Slider for homepage.
+* Jcarousel for homepage
 * One column, two column, three column page layout.
 * Intelligent dynamic columns
 * Customizable theme setting
 
 Please visit theme page for all features.
 https://github.com/arsibux/chahmirian
+
+THEME REGIONS
+-------------
