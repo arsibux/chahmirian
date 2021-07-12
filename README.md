@@ -13,7 +13,11 @@ CONTENTS OF THIS FILE
  
 INTRODUCTION
 ------------
+
  Chahmirian is a free Drupal 9 theme. Its simple and elegant using modren technology Sass based. Easy to use for business, service providers and all kinds of drupal sites.
+
+THEME FEATURES
+--------------
 
 * Drupal 9.x compatible
 * Fully responsive
@@ -34,3 +38,22 @@ https://github.com/arsibux/chahmirian
 
 THEME REGIONS
 -------------
+
+* Site Branding
+* Primary menu
+* Full Page Search
+* Page Header
+* Highlighted
+* Content Top
+* Content
+* Content Bottom
+* Homepage Content
+* Sidebar Left
+* Sidebar Right
+* Footer Top
+* Footer first
+* Footer second
+* Footer third
+* Footer fourth
+* Footer Bottom
+* Hidden Blocks
