@@ -4,7 +4,6 @@
 
 CONTENTS OF THIS FILE
 ---------------------
-
  * INTRODUCTION
  * THEME FEATURES
  * THEME REGIONS
@@ -14,14 +13,14 @@ CONTENTS OF THIS FILE
  * FAQ
  * MAINTAINERS
  
+
 INTRODUCTION
 ------------
-
  Chahmirian is a free Drupal 9 theme. Its simple and elegant using modren technology Sass based. Easy to use for business, service providers and all kinds of drupal sites.
+
 
 THEME FEATURES
 --------------
-
 * Drupal 9.x compatible
 * Fully responsive
 * Clean & modern design
@@ -39,24 +38,56 @@ THEME FEATURES
 Please visit theme page for all features.
 https://github.com/arsibux/chahmirian
 
+
 THEME REGIONS
 -------------
-
-* Site Branding
+* Branding
 * Primary menu
-* Full Page Search
-* Page Header
+* Search
+* Header
 * Highlighted
 * Content Top
 * Content
 * Content Bottom
-* Homepage Content
-* Sidebar Left
-* Sidebar Right
+* Frontpage Content
+* Left Sidebar 
+* Right Sidebar 
 * Footer Top
 * Footer first
 * Footer second
 * Footer third
 * Footer fourth
 * Footer Bottom
-* Hidden Blocks
+
+
+REQUIREMENTS
+------------
+Chahmirian theme does not require anything beyond Drupal 9 core to work.
+
+
+INSTALLATION
+------------
+
+#### SIMPLE INSTALLATION DOWNLOAD
+1. Place "chahmirian" folder to the root /themes directory.
+2. Login to the site and click on "Appearance" in the top Administration menu.
+3. Click on "Install and set as default" next to chahmirian theme.
+
+
+#### INSTALLATION THROUGH COMPOSER
+
+
+#### INSTALLATION THROUGH DRUSH
+if you face any issue on installation of theme please create issue.
+Please visit below page for detailed step by step instruction.
+https://www.drupal.org/docs/8/extending-drupal-8/installing-themes
+
+
+CONFIGURATION
+-------------
+Navigate to: Administration >> Appearance >> Settings >> chahmirian
+
+MAINTAINERS
+-----------
+Current maintainer:
+ * Arshad Sahjavi - https://www.drupal.org/u/arsibux
