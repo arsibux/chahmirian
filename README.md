@@ -75,8 +75,16 @@ INSTALLATION
 
 
 #### INSTALLATION THROUGH COMPOSER
+To download contributed Drupal modules or themes with composer:
 
+   1. Run composer require drupal/<modulename>
+   2. For example: composer require drupal/token
+   3. This needs to be executed at the root of your Drupal install but not at the same level as the core directory.
 
+Composer will then automatically update your composer.json, adding the module to all the other requirements in the list, like this:
+
+Further instructions
+https://www.drupal.org/docs/develop/using-composer/using-composer-to-install-drupal-and-manage-dependencies#adding-modules
 #### INSTALLATION THROUGH DRUSH
 if you face any issue on installation of theme please create issue.
 Please visit below page for detailed step by step instruction.
