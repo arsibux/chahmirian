@@ -1,0 +1,27 @@
+name: Chahmirian
+type: theme
+base theme: stable
+description: 'Chahmirian is a free Drupal 9 theme. Its simple and elegant using modren technology Sass based. Easy to use for business, service providers and all kinds of drupal sites.'
+package: Sahjavi
+core_version_requirement: ^8 || ^9
+libraries:
+  - chahmirian/global-styling # Common Library for all global css. Loaded on every pages.
+  - chahmirian/global-scripts # Common Library for all global js. Loaded on every pages.
+regions:
+  branding: 'Site Branding'
+  primary_menu: 'Primary menu'
+  search: 'Full Page Search'
+  page_header: 'Page Header'
+  highlighted: Highlighted
+  content: Content
+  content_top: 'Content Top'
+  content_bottom: 'Content Bottom'
+  content_front: 'Frontpage Content'
+  left_sidebar: 'Left Sidebar'
+  right_sidebar: 'Right Sidebar'
+  footer_top: 'Footer Top'
+  footer_first: 'Footer first'
+  footer_second: 'Footer second'
+  footer_third: 'Footer third'
+  footer_fourth: 'Footer fourth'
+  footer_bottom: 'Footer Bottom'

@@ -77,8 +77,8 @@ INSTALLATION
 #### INSTALLATION THROUGH COMPOSER
 To download contributed Drupal modules or themes with composer:
 
-   1. Run composer require drupal/<modulename>
-   2. For example: composer require drupal/token
+   1. Run "composer require drupal/<themename>"
+   2. For example: "composer require drupal/chahmirian"
    3. This needs to be executed at the root of your Drupal install but not at the same level as the core directory.
 
 Composer will then automatically update your composer.json, adding the module to all the other requirements in the list, like this:
