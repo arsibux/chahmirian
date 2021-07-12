@@ -50,3 +50,4 @@
 *.psd
 .history
 .vscode
+/resources/node_modules
