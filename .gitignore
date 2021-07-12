@@ -48,3 +48,5 @@
 /update.php
 /web.config
 *.psd
+.history
+.vscode
