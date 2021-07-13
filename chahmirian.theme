@@ -1,0 +1,127 @@
+<?php
+use Drupal\file\Entity\File;
+
+
+/**
+ * @file
+ * preprocessor, pre-render, alter, and common functions.
+ */
+
+
+ /*************************
+ * PREPROCESSOR FUNCTIONS *
+ **************************/
+
+/**
+ * Html preprocess for chahmirian theme.
+ */
+function chahmirian_preprocess_html(&$variables) {
+	$variables['base_path'] = base_path();
+	$variables['styling'] = theme_get_setting('styling', 'chahmirian');
+	$variables['styling_code'] = theme_get_setting('styling_code', 'chahmirian');
+}
+
+
+/**
+ * Define variables for theme settings page level.
+ */
+function chahmirian_preprocess_page(array &$variables) {
+	$config = \Drupal::config('system.site');
+	$variables['site_name'] = $config->get('name');
+	$variables['site_slogan'] = $config->get('slogan');
+	$variables['slider_show'] = theme_get_setting('slider_show', 'chahmirian');
+	$variables['slider_code'] = theme_get_setting('slider_code', 'chahmirian');
+	$variables['slider_image'] = theme_get_setting('slider_image', 'chahmirian');
+	$variables['all_icons_show'] = theme_get_setting('all_icons_show', 'chahmirian');
+	$variables['facebook_url'] = url_validation(theme_get_setting('facebook_url', 'chahmirian'));
+	$variables['twitter_url'] = url_validation(theme_get_setting('twitter_url', 'chahmirian'));
+	$variables['instagram_url'] = url_validation(theme_get_setting('instagram_url', 'chahmirian'));
+	$variables['linkedin_url'] = url_validation(theme_get_setting('linkedin_url', 'chahmirian'));
+	$variables['youtube_url'] = url_validation(theme_get_setting('youtube_url', 'chahmirian'));
+	$variables['vimeo_url'] = url_validation(theme_get_setting('vimeo_url', 'chahmirian'));
+    $variables['telegram_url'] = url_validation(theme_get_setting('telegram_url', 'chahmirian'));
+    $variables['whatsapp_url'] = url_validation(theme_get_setting('whatsapp_url', 'chahmirian'));
+    $variables['github_url'] = url_validation(theme_get_setting('github_url', 'chahmirian'));
+	$variables['vk_url'] = url_validation(theme_get_setting('vk_url', 'chahmirian'));
+	$variables['front_sidebar'] = theme_get_setting('front_sidebar', 'chahmirian');
+	$variables['scrolltotop_on'] = theme_get_setting('scrolltotop_on', 'chahmirian');
+	$variables['copyright_text'] = theme_get_setting('copyright_text', 'chahmirian');
+	$variables['font_icon_fontawesome'] = theme_get_setting('font_icon_fontawesome', 'chahmirian');
+	$variables['font_icon_material'] = theme_get_setting('font_icon_material', 'chahmirian');
+	$slider_image_id = theme_get_setting('slider_image', 'chahmirian');
+	if(!empty($slider_image_id)) {
+		$slider_image_file = File::load($slider_image_id[0]);
+		$slider_image_file->status = FILE_STATUS_PERMANENT;
+		$slider_image_file->save();
+		$slider_image_file_usage = \Drupal::service('file.usage');
+		$slider_image_file_usage->add($slider_image_file, 'chahmirian', 'theme', $slider_image_id[0]);
+	};
+	if(!empty($slider_image_file)) {
+    $imageuri = $slider_image_file->getFileUri();
+    $variables['slider_image_path'] = file_create_url($imageuri);
+	};
+}
+
+/**
+ * Define variables at Node Level Theme.
+ */
+function chahmirian_preprocess_node(array &$variables) {
+	$variables['node_author_pic'] = theme_get_setting('node_author_pic', 'chahmirian');
+	$variables['node_tags'] = theme_get_setting('node_tags', 'chahmirian');
+}
+
+/* *
+ * Define variables at Comment Theme.
+ */
+function chahmirian_preprocess_comment(array &$variables) {
+	$variables['comment_user_pic'] = theme_get_setting('comment_user_pic', 'chahmirian');
+}
+
+/**
+ * Add current page to breadcrumb.
+ */
+function chahmirian_preprocess_breadcrumb(&$variables) {
+	$request = \Drupal::request();
+	$route_match = \Drupal::routeMatch();
+	$page_title = \Drupal::service('title_resolver')->getTitle($request, $route_match->getRouteObject());
+	if (!empty($page_title)) {
+		$variables['breadcrumb'][] = [
+			'text' => $page_title,
+		];
+		// Add cache context based on url.
+		$variables['#cache']['contexts'][] = 'url';
+	}
+}
+
+
+ /***********************
+ * PRE-RENDER FUNCTIONS *
+ ************************/
+  
+ 
+ /******************
+ * ALTER FUNCTIONS *
+ *******************/
+
+/********************
+ * COMMON FUNCTIONS *
+ ********************/
+
+/**
+ * validate input urls.
+ */
+function url_validation($url) {
+	if ($url != '') {
+
+		// Remove all illegal characters  from url.
+		$url = filter_var($url, FILTER_SANITIZE_URL);
+
+		// Validate url.
+		if (filter_var($url, FILTER_VALIDATE_URL) == TRUE) {
+			$url = $url;
+		} else {
+			$url = '#';
+		}
+		return $url;
+	}
+}

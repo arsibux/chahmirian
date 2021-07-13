@@ -2,8 +2,8 @@
 
 ![screenshot](https://user-images.githubusercontent.com/9518132/125271983-c2b67f80-e324-11eb-81e1-ba6584d81189.png)
 
-CONTENTS OF THIS FILE
----------------------
+CONTENTS OF CHAHMIRIAN
+----------------------
  * INTRODUCTION
  * THEME FEATURES
  * THEME REGIONS
@@ -74,10 +74,10 @@ INSTALLATION
 3. Click on "Install and set as default" next to chahmirian theme.
 
 
-#### INSTALLATION THROUGH COMPOSER
+#### INSTALLATION VIA COMPOSER
 To download contributed Drupal modules or themes with composer:
 
-   1. Run "composer require drupal/<themename>"
+   1. Run "composer require drupal/themename"
    2. For example: "composer require drupal/chahmirian"
    3. This needs to be executed at the root of your Drupal install but not at the same level as the core directory.
 
@@ -85,7 +85,7 @@ Composer will then automatically update your composer.json, adding the module to
 
 Further instructions
 https://www.drupal.org/docs/develop/using-composer/using-composer-to-install-drupal-and-manage-dependencies#adding-modules
-#### INSTALLATION THROUGH DRUSH
+#### INSTALLATION VIA DRUSH
 if you face any issue on installation of theme please create issue.
 Please visit below page for detailed step by step instruction.
 https://www.drupal.org/docs/8/extending-drupal-8/installing-themes
