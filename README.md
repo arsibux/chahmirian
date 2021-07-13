@@ -10,7 +10,6 @@ CONTENTS OF CHAHMIRIAN
  * REQUIREMENTS
  * INSTALLATION
  * CONFIGURATION
- * FAQ
  * MAINTAINERS
  
 
@@ -41,6 +40,7 @@ https://github.com/arsibux/chahmirian
 
 THEME REGIONS
 -------------
+* Top Info Bar
 * Branding
 * Primary menu
 * Search
@@ -49,9 +49,9 @@ THEME REGIONS
 * Content Top
 * Content
 * Content Bottom
-* Frontpage Content
-* Left Sidebar 
-* Right Sidebar 
+* Front Page Content
+* Sidebar Left 
+* Sidebar Right
 * Footer Top
 * Footer first
 * Footer second

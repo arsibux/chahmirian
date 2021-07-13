@@ -38,11 +38,8 @@ function chahmirian_preprocess_page(array &$variables) {
 	$variables['instagram_url'] = url_validation(theme_get_setting('instagram_url', 'chahmirian'));
 	$variables['linkedin_url'] = url_validation(theme_get_setting('linkedin_url', 'chahmirian'));
 	$variables['youtube_url'] = url_validation(theme_get_setting('youtube_url', 'chahmirian'));
-	$variables['vimeo_url'] = url_validation(theme_get_setting('vimeo_url', 'chahmirian'));
-    $variables['telegram_url'] = url_validation(theme_get_setting('telegram_url', 'chahmirian'));
     $variables['whatsapp_url'] = url_validation(theme_get_setting('whatsapp_url', 'chahmirian'));
     $variables['github_url'] = url_validation(theme_get_setting('github_url', 'chahmirian'));
-	$variables['vk_url'] = url_validation(theme_get_setting('vk_url', 'chahmirian'));
 	$variables['front_sidebar'] = theme_get_setting('front_sidebar', 'chahmirian');
 	$variables['scrolltotop_on'] = theme_get_setting('scrolltotop_on', 'chahmirian');
 	$variables['copyright_text'] = theme_get_setting('copyright_text', 'chahmirian');

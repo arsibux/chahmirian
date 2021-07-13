@@ -8,6 +8,7 @@ libraries:
   - chahmirian/global-styling # Common Library for all global css. Loaded on every pages.
   - chahmirian/global-scripts # Common Library for all global js. Loaded on every pages.
 regions:
+  bar_top: 'Top Info Bar'
   branding: 'Site Branding'
   primary_menu: 'Primary menu'
   search: 'Full Page Search'
@@ -16,9 +17,9 @@ regions:
   content: Content
   content_top: 'Content Top'
   content_bottom: 'Content Bottom'
-  content_front: 'Frontpage Content'
-  left_sidebar: 'Left Sidebar'
-  right_sidebar: 'Right Sidebar'
+  content_front: 'Front Page Content'
+  sidebar_left: 'Sidebar Left'
+  sidebar_right: 'Sidebar Right '
   footer_top: 'Footer Top'
   footer_first: 'Footer first'
   footer_second: 'Footer second'
