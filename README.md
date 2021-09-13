@@ -1,6 +1,5 @@
 
 
-![screenshot](https://user-images.githubusercontent.com/9518132/125271983-c2b67f80-e324-11eb-81e1-ba6584d81189.png)
 
 CONTENTS OF CHAHMIRIAN
 ----------------------
